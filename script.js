@@ -73,7 +73,7 @@ function startWebRTC(isOfferer) {
     video: true,
   }, stream => {
     // Display your local video in #localVideo element
-    localVideo.src = URL.createObjectURL(stream);
+//    localVideo.src = URL.createObjectURL(stream);
     // Add your stream to be sent to the conneting peer
     pc.addStream(stream);
   }, error => console.error(error));
